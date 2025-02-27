@@ -52,6 +52,7 @@ export default async function Header() {
             </Link>
 
             {/* Growth Tools Dropdown */}
+
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button className="flex items-center gap-2">
