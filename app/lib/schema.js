@@ -45,10 +45,7 @@ export const entrySchema = z
     })
     .refine(
         (data) => {
-            if (!data.current && !data.endDate) {
-                return false;
-            }
-            return true;
+            return !(!data.current && !data.endDate);
         },
         {
             message: "End date is required unless this is your current position",
